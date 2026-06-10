@@ -1,0 +1,23 @@
+<h1 class="region-title">Johto Region</h1>
+
+<div class="leaders-container">
+
+    @for(leader of leaders(); track leader.name){
+
+      <app-leader-info
+      [name]="leader.name"
+      [emoji]="leader.emoji"
+      [age]="leader.age"
+      [badge]="leader.badge"
+      [badgeImage]="leader.badgeImage"
+      [location]="leader.location"
+      [type]="leader.type"
+      [typeColor]="leader.typeColor"
+      [image]="leader.image"
+      [description]="leader.description"
+      [team]="leader.team">
+
+    </app-leader-info>
+    }
+  
+  </div>

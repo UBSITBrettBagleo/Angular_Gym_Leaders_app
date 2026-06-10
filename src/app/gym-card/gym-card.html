@@ -1,0 +1,12 @@
+<div class="card">
+    <img [src]="leader.image" [alt]="leader.name" class="leader-img" />
+    <h3 [style.color]="leader.typeColor">{{ leader.emoji }} {{ leader.name }}</h3>
+    <p><strong>Badge:</strong> {{ leader.badge }}</p>
+    <p><strong>Location:</strong> {{ leader.location }}</p>
+    <p><strong>Type:</strong> <span [style.color]="leader.typeColor">{{ leader.type }}</span></p>
+    <ul>
+      @for (mon of leader.team; track mon.pokemon) {
+        <li>{{ mon.pokemon }} — {{ mon.type }} (Lv. {{ mon.level }})</li>
+      }
+    </ul>
+  </div>

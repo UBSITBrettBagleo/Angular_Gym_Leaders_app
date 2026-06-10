@@ -1,0 +1,76 @@
+.leader-card{
+  width:300px;
+  background:white;
+  border-radius:15px;
+  padding:20px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.leader-image{
+  width:150px;
+  height:150px;
+  object-fit:contain;
+  display:block;
+  margin:0 auto;
+}
+
+.leader-name{
+  text-align:center;
+  margin:10px 0;
+}
+
+.info-section{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  margin:15px 0;
+  text-align:left;
+}
+
+.badge-row{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.badge-icon{
+  width:30px;
+  height:30px;
+  object-fit:contain;
+}
+
+.type-row{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.type-badge{
+  color:white;
+  padding:5px 10px;
+  border-radius:10px;
+}
+
+.button-row{
+  display:flex;
+  gap:10px;
+  margin:15px 0;
+}
+
+.button-row button{
+  flex:1;
+  padding:8px 16px;
+  cursor:pointer;
+}
+
+.popup-card{
+  margin-top:15px;
+  background:#9aa3a7;
+  padding:15px;
+  border-radius:10px;
+  text-align:left;
+}
+
+.popup-card p{
+  margin:8px 0;
+}

@@ -1,0 +1,83 @@
+<div class="leader-card">
+
+    <img class="leader-image"
+         [src]="image"
+         [alt]="name">
+  
+    <h2 class="leader-name">
+      {{ emoji }} {{ name }}
+    </h2>
+  
+    <p><strong>Age:</strong> {{age}}</p>
+  
+    <p class="badge-row">
+
+        <strong>Badge:</strong>
+      
+        {{ badge }}
+      
+        @if(badgeImage !== ''){
+      
+          <img
+            [src]="badgeImage"
+            class="badge-icon"
+            alt="Badge">
+      
+        }
+      
+      </p>
+  
+    <p><strong>Location:</strong> {{location}}</p>
+  
+    <p class="type-row">
+        <strong>Type:</strong>
+  
+      <span class="type-badge"
+            [style.background]="typeColor">
+  
+        {{type}}
+  
+      </span>
+    </p>
+  
+    <div class="button-row">
+
+        <button (click)="toggleTeam()">
+          Team
+        </button>
+      
+        <button (click)="toggleDescription()">
+          Motto
+        </button>
+      
+      </div>
+  
+      @if(showTeam){
+
+        <div class="popup-card">
+          <h3>Pokémon Team</h3>
+        
+          @for(pokemon of team; track pokemon){
+        
+            <p>
+              <strong>{{ pokemon.pokemon }}</strong>
+              ({{ pokemon.type }})
+              Lv. {{ pokemon.level }}
+            </p>
+        
+          }
+        
+        </div>
+        
+        }
+  
+        @if(showDescription){
+
+            <div class="popup-card">
+              <h3>Motto</h3>
+              <p>{{ description }}</p>
+            </div>
+            
+            }
+  
+  </div>

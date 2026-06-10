@@ -1,0 +1,19 @@
+
+.container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.region-title{
+  text-align:center;
+  color:white;
+  padding:30px;
+  background:linear-gradient(90deg,#453f8b, #44257e);
+}
+.leaders-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:40px;
+  padding:40px;
+}

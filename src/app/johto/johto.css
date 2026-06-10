@@ -1,0 +1,15 @@
+
+
+.region-title{
+  text-align:center;
+  color:white;
+  padding:30px;
+  background:linear-gradient(90deg,#11518d,#4397be);
+}
+.leaders-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:40px;
+  padding:40px;
+}
