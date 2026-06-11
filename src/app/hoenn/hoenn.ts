@@ -1,9 +1,9 @@
 import { Component, inject } from '@angular/core';
-import { HoennService } from '../hoenn-service/hoenn-service';
+import { HoennService } from '../hoenn-service/hoenn-services';
 
 @Component({
   selector: 'app-hoenn',
-  standalone: true;
+  standalone: true,
   imports: [],
   templateUrl: './hoenn.html',
   styleUrl: './hoenn.css',
