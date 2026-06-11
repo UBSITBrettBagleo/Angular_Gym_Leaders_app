@@ -1,1 +1,29 @@
-<p>hoenn works!</p>
+<h1>Hoenn Gym Leaders</h1>
+
+@for (leader of hoennService.gymLeaders(); track leader.name) {
+
+<div class="leader-card">
+
+  <h2>{{ leader.name }}</h2>
+
+  <p><strong>Badge:</strong> {{ leader.badge }}</p>
+
+  <p><strong>Location:</strong> {{ leader.location }}</p>
+
+  <p><strong>Specialty:</strong> {{ leader.specialty }}</p>
+
+  <h3>Pokémon Team</h3>
+
+  <ul>
+
+    @for (pokemon of leader.team; track pokemon) {
+
+      <li>{{ pokemon }}</li>
+
+    } 
+
+  </ul>
+
+</div>
+
+}
