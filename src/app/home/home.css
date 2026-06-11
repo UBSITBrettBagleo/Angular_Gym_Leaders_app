@@ -1,7 +1,7 @@
 .hero{
     text-align:center;
     padding:60px 20px;
-    background:linear-gradient(135deg,#644f96,#4397be);
+    background:linear-gradient(135deg,#0878ac, #e4d01b);
     color:white;
 }
 
@@ -22,14 +22,15 @@
     flex-wrap:wrap;
 }
 
-.region-card{
-    width:400px;
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-}
 
+.region-card{
+    width:450px;
+    background:rgb(233, 226, 226);
+    padding:25px;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(61, 16, 223, 0.15);
+}
 .region-card h2{
     color:#302d33;
 }
@@ -48,7 +49,7 @@
 
 .region-card:hover{
     transform:translateY(-5px);
-    box-shadow:0 8px 20px rgba(0,0,0,.2);
+    box-shadow:0 8px 20px rgba(8, 10, 124, 0.2);
 }
 
 .regions{
@@ -59,9 +60,3 @@
     padding:50px;
 }
 
-.region-card{
-    width:450px;
-    background:white;
-    border-radius:20px;
-    overflow:hidden;
-}
